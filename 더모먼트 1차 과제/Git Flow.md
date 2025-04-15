@@ -53,12 +53,12 @@ release/버전이름
 작업 흐름 요약
 ==============
 1. main에서 프로젝트 시작하기<br>
-2. develop 브랜치 생성하기<br>
-3. 기능 추가할 때마다 feature/기능명 브랜치 생성하기!<br>
-4. 기능 다 만들면 develop에 merge하기<br>
-5. 배포할 준비되면 release 브랜치 만들고 테스트하기<br>
-6. 완성되면 main에 merge (그리고 태그!)<br>
-7. 긴급한 버그는 hotfix 브랜치에서 수정 → main + develop에 merge하기
+2. *develop 브랜치* 생성하기<br>
+3. 기능 추가할 때마다 *feature/기능명 브랜치* 생성하기!<br>
+4. 기능 다 만들면 *develop에 merge*하기<br>
+5. 배포할 준비되면 *release 브랜치* 만들고 테스트하기<br>
+6. 완성되면 *main에 merge* (그리고 태그)<br>
+7. 긴급한 버그는 *hotfix 브랜치*에서 수정 → main + develop에 merge하기<br>
 
 
 
