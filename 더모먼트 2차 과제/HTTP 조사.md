@@ -106,7 +106,7 @@ Content-Type: text/html
 
 <html>
   <body>
-    Welcome, Seoyeon!
+    Welcome, Seoyeon
   </body>
 </html>
 
