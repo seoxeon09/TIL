@@ -59,8 +59,56 @@ POST는 회원가입, 댓글 작성, 게시글 올릴 때 사용한다<br>
   <br>
   ***401***: 로그인이나 회원가입이 필요한건데 그걸 안했을때 오류가 나온다.<br>
   ***403***: 이 페이지에 접근할 권한이 없다는 의미이다!<br>
+<br>
+<br>
 
+HTTP 요청과 응답구조
+--------------------
+**Header**: 헤더는 이 *메시지에 대한 설명서*이다<br>
+HTTP 요청이나 응답이 어떤 내용을 담고 있고 어떻게 처리해야 하는지를 알려준다..<br>
+<br>
+<br>
+**요청 Header예시:<br>**
 
+GET /login HTTP/1.1 <br>
+Host: www.example.com <br>
+User-Agent: Chrome <br>
+Content-Type: application/json <br>
+<br>
+
+**응답 Header예시:<br>**
+
+HTTP/1.1 200 OK <br>
+Content-Type: text/html <br>
+Content-Length: 1234 <br>
+Set-Cookie: id=abcd <br>
+<br>
+<br>
+ **Body**: *실제로 전달되는 데이터* 이다.<br>
+서버나 클라이언트가 보내고 싶은 진짜 내용을 담는 부분이고 서버에 무언가를 보내야 할 때 사용한당<br>
+예를 들어 회원가입 정보, 로그인 정보, 글 내용 등이 있따.<br>
+<br>
+**요청 Body에서 예시<br>**
+
+POST /signup HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "seoyeon",
+  "password": "1234"
+}
+<br>
+<br>
+**응답 Body에서 예시<br>**
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+<html>
+  <body>
+    Welcome, Seoyeon!
+  </body>
+</html>
 
 
 
