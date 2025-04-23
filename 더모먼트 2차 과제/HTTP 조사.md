@@ -2,7 +2,7 @@ HTTP란 무엇일까?
 ===============
 *HTTP(HyperText Transfer Protocol)* 는 **웹 브라우저와 웹 서버간의 데이터 통신**을 위한 프로토콜이다.<br>
 *HTTP*는 텍스트 기반의 요청 응답 모델을 따르며, **클라이언트가 요청을 보내면, 서버가 응답**을 주는 구조다.<br>
-<br>
+<br><br>
 
 HTTP의 주요 특징들
 ---------------
@@ -53,12 +53,13 @@ POST는 회원가입, 댓글 작성, 게시글 올릴 때 사용한다.<br>
   다들 한번쯤은 게임을 하거나 웹페이지에 오류가 생길때 뜨는 숫자를 본적 있을것이다.<br><br>
   이게 바로 서버가 클라이언트의 요청에 대해 **결과가 어땠는지 알려주는 숫자 코드** 이다.<br>
   <br>
-  ***202***: 요청이 성공적으로 되었다는 의미이다.<br>
-  ***404***: 요청한 페이지가 없다는 뜻이다. 주소가 잘못됐거나 없는 주소이면 이런 코드가 뜬다.<br>
-  ***505***: 서버가 고장났다는 의미로 서버 내부에서 문제가 생겼다는 의미이다.<br>
+>-  ***202***: 요청이 성공적으로 되었다는 의미이다.<br>
+>-  ***404***: 요청한 페이지가 없다는 뜻이다. 주소가 잘못됐거나 없는 주소이면 이런 코드가 뜬다.<br>
+>-  ***505***: 서버가 고장났다는 의미로 서버 내부에서 문제가 생겼다는 의미이다.<br>
   <br>
-  ***401***: 로그인이나 회원가입이 필요한건데 그걸 안했을때 오류가 나온다.<br>
-  ***403***: 이 페이지에 접근할 권한이 없다는 의미이다.<br>
+  
+>- ***401***: 로그인이나 회원가입이 필요한건데 그걸 안했을때 오류가 나온다.<br>
+>- ***403***: 이 페이지에 접근할 권한이 없다는 의미이다.<br>
 <br>
 <br>
 
@@ -70,7 +71,7 @@ HTTP 요청이나 응답이 어떤 내용을 담고 있고 어떻게 처리해�
 <br>
 **요청 Header예시:<br>**
 
-GET /login HTTP/1.1 <br>
+> GET /login HTTP/1.1 <br>
 Host: www.example.com <br>
 User-Agent: Chrome <br>
 Content-Type: application/json <br>
@@ -78,35 +79,38 @@ Content-Type: application/json <br>
 
 **응답 Header예시:<br>**
 
-HTTP/1.1 200 OK <br>
+> HTTP/1.1 200 OK <br>
 Content-Type: text/html <br>
 Content-Length: 1234 <br>
 Set-Cookie: id=abcd <br>
 <br>
 <br>
- **Body**: *실제로 전달되는 데이터* 이다.<br>
+
+**Body**: *실제로 전달되는 데이터* 이다.<br>
 서버나 클라이언트가 보내고 싶은 진짜 내용을 담는 부분이고 서버에 무언가를 보내야 할 때 사용한다.<br>
 예를 들어 회원가입 정보, 로그인 정보, 글 내용 등이 있다.<br>
 <br>
+
 **요청 Body에서 예시<br>**
 
-POST /signup HTTP/1.1
+> POST /signup HTTP/1.1
 Content-Type: application/json
 
-{
+> {
   "username": "seoyeon",
   "password": "1234"
 }
 <br>
 <br>
+
 **응답 Body에서 예시<br>**
 
-HTTP/1.1 200 OK
+> HTTP/1.1 200 OK
 Content-Type: text/html
 
-<html>
+> <html>
   <body>
-    Welcome, Seoyeon
+    > Welcome, Seoyeon
   </body>
 </html>
 
