@@ -55,7 +55,7 @@ Css 예시:
 ```
 <br><br>
 
-### 아이디 선택자**<br>
+### 아이디 선택자<br>
 아이디명 앞에 #샵을 붙여서 선택한다.<br><br>
 Html 예시:
 ```
@@ -186,10 +186,10 @@ Box Model이란? <br>
 웹페이지에서 모든 Html 요소가 **네모난 상자(box)** 처럼 생겼다고 생각하는 모델이다.<br><br>
 이 박스들은 *총 4부분* 으로 나뉘어져 있다.<br><br>
 
-> **[Margin]** :   바깥 여백 (가장 바깥)<br><br>
-> **[Border]** :  테두리<br><br>
-> **[Padding]** :  안쪽 여백 (내용과 테두리 사이)<br><br>
-> **[Content]** : 실제 내용 (텍스트, 이미지 등)<br><br><br>
+> **[Margin]** :   바깥 여백 (가장 바깥)을 말한다.<br><br>
+> **[Border]** :  테두리이다.<br><br>
+> **[Padding]** :  안쪽 여백 (내용과 테두리 사이)를 의미한다.<br><br>
+> **[Content]** : 실제 내용 (텍스트, 이미지 등)을 적는다.<br><br><br>
 
 ![img_css_boxmodel](https://github.com/user-attachments/assets/96b3e302-16d8-47b7-9705-a3e4cbf20f9f)
 <br>
