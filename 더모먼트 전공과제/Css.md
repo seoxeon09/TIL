@@ -270,12 +270,41 @@ Box Model이란? <br>
 
 ![image](https://github.com/user-attachments/assets/f503645f-2764-4eb9-9b8b-7d41ff32f80f)
 
+<br>
+
 
 >- **static** :	기본값, 흐름대로 배치	아무 것도 안 하면 이 상태이다.<br><br>
 >- **relative** : 기준점에서 조금 이동	위치 조정할때 쓴다.<br><br>
 >- **absolute** : 정확한 위치로	버튼을 특정 위치에 고정할때 쓴다.<br><br>
 >- **fixed** :	화면에 고정을 하여	스크롤해도 안 사라지는 메뉴이다.<br><br>
 >- **sticky** :	스크롤할 때 붙어있다가 내려가는	상단바 만들 때 유용하다.<br><br>
+<br>
+<br>
+<br>
+<br>
+
+### 3. flexbox(플랙스 박스)
+**가로 또는 세로로 요소를 정렬할때 쓰인다.**
+<br>
+<br>
+
+*flex container 만들기*
+```
+.container {
+  display: flex;
+}
+```
+<br>
+
+![a-1665382286109-2x](https://github.com/user-attachments/assets/b295ae10-cc60-464b-9d24-ea02aa35f5e9)
+
+<br>
+
+>- **justify-content** : 주축 방향 정렬하기 (가로 정렬)<br><br>
+>- **align-items** :	교차축 정렬하기 (세로 정렬)<br><br>
+>- **flex-direction** :	방향 바꾸기 (row, column 등)<br><br>
+>- **gap** : 요소 사이 간격 조절하기<br><br>
+
 
 
 
