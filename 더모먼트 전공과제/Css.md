@@ -1,6 +1,6 @@
 Css의 기본 문법 및 Selecter
 ============================
-CSS는 HTML 요소에 **스타일(디자인)** 을 입혀주는 언어이다.<br>
+CSS는 HTML 요소에 **스타일(디자인)** 을 입혀주는 언어이다.<br><br>
 CSS 문법 기본 형태:
 
 ```
@@ -54,7 +54,7 @@ Css 예시:
   font-size: 20px;
 }
 ```
-<br><br>
+<br>
 
 ### 아이디 선택자<br>
 아이디명 앞에 #샵을 붙여서 선택한다.<br><br>
@@ -68,7 +68,7 @@ Css 예시:
   color: green;
 }
 ```
-<br><br>
+<br>
 
 ### 전체 선택자<br>
 * 를 사용하면 모든 요소에 적용된다.<br>
@@ -78,7 +78,7 @@ Css 예시:
   padding: 0;
 }
 ```
-<br><br>
+<br>
 
 ### 그룹 선택자<br>
 , 콤마를 써서 여러 요소를 한 번에 선택할 수 있다.<br>
@@ -249,8 +249,9 @@ Box Model이란? <br>
 <br>
 <br>
 
-![1_eTM7rZjWEbhcn9HHNn7l6Q](https://github.com/user-attachments/assets/51b574e9-ec75-4627-88a8-a235f0a6fedd)
+<img src= "https://github.com/user-attachments/assets/51b574e9-ec75-4627-88a8-a235f0a6fedd" width="700" height="300"/>
 
+<br>
 <br>
 
 >- **block** :	한 줄을 다 차지한다.	ex) &lt;div&gt;, &lt;p&gt; <br><br>
@@ -295,15 +296,51 @@ Box Model이란? <br>
 }
 ```
 <br>
+<br>
 
-![a-1665382286109-2x](https://github.com/user-attachments/assets/b295ae10-cc60-464b-9d24-ea02aa35f5e9)
+<img src="https://github.com/user-attachments/assets/4a3b408a-f1fb-4fa4-a584-0506a13b1171" width="700" height="300"/>
 
+<br>
 <br>
 
 >- **justify-content** : 주축 방향 정렬하기 (가로 정렬)<br><br>
 >- **align-items** :	교차축 정렬하기 (세로 정렬)<br><br>
 >- **flex-direction** :	방향 바꾸기 (row, column 등)<br><br>
 >- **gap** : 요소 사이 간격 조절하기<br><br>
+<br>
+<br>
+
+
+
+### 4. 반응형 웹
+**반응형 웹은 화면 크기에 따라 자동으로 모양이 바뀌는 웹사이트를 말한다.**
+<br>
+<br>
+
+##### 반응형 웹의 장점
+>- 주소가 같은 1개의 도메인을 사용한다. <br>
+>- 화면 크기와 사이즈에 상관없이 모든 환경에서 잘 작동한다<br>
+
+##### 반응형 웹의 단점
+>- 로딩 속도가 **적응형 웹**에 비해 느리다.<br>
+>- 디자인이 많아질수록 구현이 느리다.<br>
+<br>
+<br>
+
+### 1. em 단위
+em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 단위이다.<br><br>
+
+예시 코드:
+```
+.parent {
+  font-size: 20px;
+}
+
+.child {
+  font-size: 2em; /* 2 * 20px = 40px */
+}
+```
+
 
 
 
