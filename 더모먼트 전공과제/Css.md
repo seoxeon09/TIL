@@ -341,6 +341,49 @@ em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 �
 }
 ```
 
+### 2. rem 단위
+rem은 "HTML 루트 요소(root element)의 글자 크기" 기준이다.<br><br>
+
+예시 코드:
+```
+html {
+  font-size: 16px;
+}
+
+.box {
+  font-size: 2rem; /* 2 * 16px = 32px */
+}
+```
+
+1rem = html의 font-size
+
+항상 일정한 기준이라서 예측하기 쉽다.<br>
+그래서 보통은 rem이 더 자주 쓰인다.<br><br>
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/46d46160-ef6d-42ad-9554-0b28943f5ae0" width="700" height="200"/>
+
+
+### 3.  Media Queries (미디어 쿼리)
+
+기기 화면 크기(해상도)에 따라 CSS 스타일을 다르게 적용하는 방법이다.<br>
+반응형 웹을 만들 때 꼭 필요하다.<br>
+
+예시 코드:
+```
+.box {
+  background-color: blue;
+}
+
+@media (max-width: 600px) {
+  .box {
+    background-color: red;
+  }
+}
+```
+
+
 
 
 
