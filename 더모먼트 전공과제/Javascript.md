@@ -330,3 +330,75 @@ for (let key in user) {
 |배열|여러 값을 순서대로 저장|["키위", "딸기"]|
 |객체|이름(key)과 값(value) 저장|{ name: "서연", age: 17 }|
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## DOM 선택자 및 조작
+DOM은 웹 페이지의 구조(HTML)를 자바스크립트로 조작하는 방법이다.<br><br>
+
+### 선택자(querySelector)
+HTML에서 원하는 요소를 선택할 수 있다.<br><br>
+
+Html
+```
+<p id="myText">안녕하세요</p>
+```
+Javascript
+```
+let text = document.querySelector("#myText");
+console.log(text.innerText); // 안녕하세요
+```
+> `#id`, `.class`, `태그이름` 으로 선택할 수 있다.
+
+<br>
+<br>
+
+### 내용 바꾸기(innerText, innerHTML)
+
+Javascript
+```
+text.innerText = "반가워요!"; // 텍스트만 바꿈
+text.innerHTML = "<strong>굵게!</strong>"; // HTML 태그도 가능
+```
+<br>
+<br>
+<br>
+<br>
+
+## 이벤트 처리 (addEventListener)
+버튼을 클릭했을 때, 입력했을 때 어떤 동작을 하게 하는 코드이다.<br><br>
+
+### 클릭 이벤트 예시
+Html
+```
+<button id="btn">눌러봐!</button>
+```
+Javascript
+```
+let btn = document.querySelector("#btn");
+
+btn.addEventListener("click", function () {
+  alert("버튼을 눌렀어요!");
+});
+```
+<br>
+
+### 입력 이벤트 예시
+Html
+```
+<input id="nameInput" placeholder="이름을 입력하세요">
+```
+Javascript
+```
+let input = document.querySelector("#nameInput");
+
+input.addEventListener("input", function () {
+  console.log("입력 중:", input.value);
+});
+```
+
+
+
