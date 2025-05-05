@@ -77,7 +77,7 @@ if (score >= 80) {
 ## 반복문
 **반복문**은 특정 작업을 여러번 반복해서 수행하도록하는 것이다.<br><br><br>
 
-### for문
+## for문
 가장 기본적이고 자주 쓰이는 반복문이다.<br><br>
 
 입력:
@@ -101,7 +101,7 @@ for (let i = 1; i <= 5; i++) {
 <br>
 <br>
 
-### while문
+## while문
 조건이 참일동안 계속 반복한다. while문은 언제 끝날지 확실하지 않을때 좋다.<br><br>
 
 입력:
@@ -121,5 +121,96 @@ while (i <= 5) {
 4
 5
 ```
+<br>
+<br>
 
-  
+## do...while문
+while문과 비슷하지만 무조건 한번은 실행된다.<br><br>
+
+입력:
+```
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+```
+출력:
+```
+1
+2
+3
+4
+5
+```
+<br>
+<br>
+
+## for...of문
+**배열 안의 값**들을 하나씩 꺼내서 반복할때 쓴다.<br><br>
+
+입력:
+```
+let fruits = ["청포도", "레몬", "딸기"];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+```
+출력:
+```
+청포도
+레몬
+딸기
+```
+<br>
+<br>
+
+## for...in문
+**객체 안의 키(이름들)** 을 꺼내서 반복한다.<br>
+**객체에서 사용한다.**<br><br>
+
+입력:
+```
+let user = {
+  name: "서연",
+  age: 17,
+  hobby: "잠.."
+};
+
+for (let key in user) {
+  console.log(key + ": " + user[key]);
+}
+```
+출력:
+```
+name: 서연
+age: 17
+hobby: 잠..
+```
+<br>
+<br>
+<br>
+
+
++ **break**: 반복을 멈추고 나감<br>
++ **continue**: 이번 반복만 건너뛰고 다음 반복으로 넘어감<br><br>
+
+
+입력:
+```
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue; // 3일 때는 건너뜀
+  }
+  console.log(i);
+}
+```
+출력:
+```
+1
+2
+4
+5
+```
