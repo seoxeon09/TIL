@@ -214,3 +214,119 @@ for (let i = 1; i <= 5; i++) {
 4
 5
 ```
+<br>
+<br>
+<br>
+<br>
+
+ ## 함수(Function)
+함수는 어떤 일을 묶어서 이름 붙여놓은 것이다. 필요할때마다 함수 이름으로 불러서 실행한다.<br><br>
+
+함수 만드는법(선언):
+```
+function sayHello() {
+  console.log("안녕!");
+}
+```
+함수 사용하는법(호출):
+```
+sayHello(); // 결과: 안녕!
+```
+<br>
+<br>
+
+### 매개변수와 return
+
+```
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(3, 5); // result = 8
+console.log(result);    // 8
+```
+>- `a, b`는 매개변수(입력값)<br>
+>- `return`은 **결과(출력값)** 를 돌려주는 것이다.<br>
+<br>
+<br>
+<br>
+<br>
+
+## 배열(Array)
+배열은 여러 값을 **하나로 묶어서 저장**하는 상자이다. 값에는 숫자, 문자, 함수, 객체들이 들어갈수 있다.<br><br>
+
+배열 만드는법:
+```
+let fruits = ["사과", "바나나", "딸기"];
+```
+
+배열에서 값 꺼내기:
+```
+console.log(fruits[0]); // 사과
+console.log(fruits[1]); // 바나나
+```
+> 배열은 숫자 번호(index)가 0부터 시작한다.<br>
+<br>
+<br>
+
+배열 값 추가/삭제:
+```
+fruits.push("포도");   // 맨 뒤에 추가
+fruits.pop();          // 맨 뒤 제거
+fruits.unshift("귤");  // 맨 앞에 추가
+fruits.shift();        // 맨 앞 제거
+```
+
+배열 반복하기:
+```
+for (let fruit of fruits) {
+  console.log(fruit);  // 하나씩 출력
+}
+```
+<br>
+<br>
+<br>
+<br>
+
+## 객체(Object)
+객체는 이름(key)과 값(value)을 짝지어서 저장하는 것이다. 쉽게 말해, 정보를 묶어서 표현하는 상자이다.<br><br>
+
+객체 만드는법:
+```
+let user = {
+  name: "서연",
+  age: 17,
+  hobby: "sleeping"
+};
+```
+
+객체 값 꺼내기:
+```
+console.log(user.name);   // 서연
+console.log(user["age"]); // 17
+```
+<br>
+<br>
+
+객체 값 추가/삭제:
+```
+user.job = "학생";       // 추가
+user.age = 18;           // 변경
+delete user.hobby;       // 삭제
+```
+
+객체 반복하기(for..in) :
+```
+for (let key in user) {
+  console.log(key + ": " + user[key]);
+}
+```
+<br>
+<br>
+
+|개념|설명|예시|
+|------|---|---|
+|함수|어떤 코드를 묶어서 사용|function sayHi() {...}|
+|배열|여러 값을 순서대로 저장|["키위", "딸기"]|
+|객체|이름(key)과 값(value) 저장|{ name: "서연", age: 17 }|
+
