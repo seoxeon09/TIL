@@ -446,6 +446,46 @@ loadPosts();
 <br>
 <br>
 
+## API 실습
+**API**란 애플리케이션끼리 소통하고 상호작용하기 위해 정의된 규칙이나 프로토콜이다.<br>
+서로 다른 소프트웨어가 **데이터를 주고받거나 기능을 공유**할 수 있도록 연결하는 역할을 한다.<br><br>
+
+Html
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>간단한 API 실습</title>
+  </head>
+  <body>
+    <button id="loadBtn">데이터 가져오기</button>
+
+    <script>
+      document.querySelector("#loadBtn").addEventListener("click", () => {
+        fetch("https://jsonplaceholder.typicode.com/posts/1")
+          .then(response => response.json())
+          .then(data => {
+            console.log("가져온 데이터:", data);
+          });
+      });
+    </script>
+  </body>
+</html>
+```
+결과(console)
+```
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat...",
+  "body": "quia et suscipit suscipit..."
+}
+```
+<br>
+<br>
+<br>
+<br>
+
 ## 예외 처리(try-catch)
 코드가 에러가 나도 멈추지 않고 처리할수 있도록 하는것이다.<br><br>
 
