@@ -21,6 +21,15 @@ let age = 17;
 >- **let** : 재선언 불가능, 재할당 가능, 블록 범위<br>
 >- **const** :	한 번 정하면 바꿀수 없는 값<br>
 <br>
+
+|**구분**|var|let|const|
+|------|---|---|---|
+| **재선언**|가능|불가능|불가능|
+| **재할당**|가능|가능|불가능|
+|**블록 범위**|없음|있음|있음|
+|**사용 추천**|거의 안씀|가장 많이 사용|값이 안 바뀔때만 사용|
+
+<br>
 <br>
 <br>
 <br>
@@ -398,6 +407,58 @@ let input = document.querySelector("#nameInput");
 input.addEventListener("input", function () {
   console.log("입력 중:", input.value);
 });
+```
+<br>
+<br>
+<br>
+<br>
+
+## 비동기 개념(fetch, Promise, async/await)
+웹에서 데이터를 가져올 때는 시간이 걸리기 때문에 비동기 방식이 필요하다.<br><br>
+
+## fetch(데이터 불러오기)
+javascript
+```
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+<br>
+
+### Promise란?
+> "나중에 결과 줄게!" 라고 약속하는 객체<br>
+→ .then()으로 결과 받음, .catch()로 에러 받음
+
+<br>
+
+ ## async/await: 더 쉽게 쓰는 방법
+ Javascript
+ ```
+async function loadPosts() {
+  let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  let data = await response.json();
+  console.log(data);
+}
+loadPosts();
+```
+<br>
+<br>
+<br>
+<br>
+
+## 예외 처리(try-catch)
+코드가 에러가 나도 멈추지 않고 처리할수 있도록 하는것이다.<br><br>
+
+Javascript
+```
+try {
+  // 에러 날 수도 있는 코드
+  let res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  let data = await res.json();
+  console.log(data);
+} catch (error) {
+  console.log("에러 발생!", error);
+}
 ```
 
 
