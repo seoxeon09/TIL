@@ -54,7 +54,7 @@ Css 예시:
   font-size: 20px;
 }
 ```
-<br>
+<br><br>
 
 ### 아이디 선택자<br>
 아이디명 앞에 #샵을 붙여서 선택한다.<br><br>
@@ -68,7 +68,7 @@ Css 예시:
   color: green;
 }
 ```
-<br>
+<br><br>
 
 ### 전체 선택자<br>
 * 를 사용하면 모든 요소에 적용된다.<br>
@@ -96,10 +96,10 @@ Css 기초 스타일링
 =================
 <br>
 
-<글꼴>
+글꼴
 ------------------
 
-### 글자 종류 설명
+#### 글자 종류 설명
  ```
 body {
   font-family: 'Arial', sans-serif;
@@ -107,7 +107,7 @@ body {
 ```
 <br>
 
-### 글자 크기 조절
+#### 글자 크기 조절
  ```
 p {
   font-size: 16px;
@@ -115,7 +115,7 @@ p {
 ```
 <br>
 
-### 글자 굵기 조절
+#### 글자 굵기 조절
 ```
 h1 {
   font-weight: bold; 
@@ -123,7 +123,7 @@ h1 {
 ```
 <br>
 
-### 글자 스타일
+#### 글자 스타일
 ```
 em {
   font-style: italic;
@@ -132,9 +132,9 @@ em {
 <br>
 <br>
 
-<색상 스타일링>
+색상 스타일링
 -------------
-### 글자 색상 바꾸기
+#### 글자 색상 바꾸기
   ```
   h2 {
   color: blue;
@@ -142,7 +142,7 @@ em {
  ```
 <br>
 
-### 배경 색상 바꾸기
+#### 배경 색상 바꾸기
 ```
 div {
   background-color: lightgray;
@@ -151,10 +151,10 @@ div {
 <br>
 <br>
 
- <배경 스타일링>
+ 배경 스타일링
  ------------
  
- ### 배경 이미지 넣기
+ #### 배경 이미지 넣기
 ```
  body {
   background-image: url('https://example.com/image.jpg');
@@ -162,7 +162,7 @@ div {
 ```
 <br>
 
-### 배경 크기 조정
+#### 배경 크기 조정
 ```
 body {
   background-size: cover;
@@ -170,7 +170,7 @@ body {
 ```
 <br>
 
-### 배경 반복 여부
+#### 배경 반복 여부
 ```
    body {
   background-repeat: no-repeat;
@@ -326,6 +326,8 @@ Box Model이란? <br>
 >- 디자인이 많아질수록 구현이 느리다.<br>
 <br>
 <br>
+<br>
+<br>
 
 ### 1. em 단위
 em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 단위이다.<br><br>
@@ -340,6 +342,8 @@ em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 �
   font-size: 2em; /* 2 * 20px = 40px */
 }
 ```
+<br>
+<br>
 
 ### 2. rem 단위
 rem은 "HTML 루트 요소(root element)의 글자 크기" 기준이다.<br><br>
@@ -358,11 +362,13 @@ html {
 1rem = html의 font-size
 
 항상 일정한 기준이라서 예측하기 쉽다.<br>
-그래서 보통은 rem이 더 자주 쓰인다.<br><br>
-
-<br>
+그래서 보통은 rem이 더 자주 쓰인다.<br>
 
 <img src="https://github.com/user-attachments/assets/46d46160-ef6d-42ad-9554-0b28943f5ae0" width="700" height="200"/>
+<br>
+<br>
+<br>
+
 
 
 ### 3.  Media Queries (미디어 쿼리)
