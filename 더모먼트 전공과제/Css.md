@@ -13,7 +13,7 @@ CSS 문법 기본 형태:
 >- **값** : 그 스타일의 구체적인 설정이다. (ex: 분홍색, 20px, 파란 배경)
 <br>
 <br>
-적용 예시:
+Css 적용 예시:
 
 ```
 h1 {
@@ -34,7 +34,9 @@ h1 {
 Selecter(선택자)의 종류와 사용법
 --------------------------------
 ### 태그 선택자<br>
-HTML의 태그 이름을 그대로 쓰는것이다.
+HTML의 태그 이름을 그대로 쓰는것이다.<br>
+
+Css 예시:
   ```
 p {
   color: blue;
@@ -72,6 +74,8 @@ Css 예시:
 
 ### 전체 선택자<br>
 * 를 사용하면 모든 요소에 적용된다.<br>
+
+Css 예시:
 ```
 * {
   margin: 0;
@@ -82,6 +86,8 @@ Css 예시:
 
 ### 그룹 선택자<br>
 , 콤마를 써서 여러 요소를 한 번에 선택할 수 있다.<br>
+
+Css 예시:
 ```
 h1, h2, p {
   color: purple;
@@ -100,6 +106,8 @@ Css 기초 스타일링
 ------------------
 
 #### 글자 종류 설명
+
+Css 예시:
  ```
 body {
   font-family: 'Arial', sans-serif;
@@ -108,6 +116,8 @@ body {
 <br>
 
 #### 글자 크기 조절
+
+Css 예시:
  ```
 p {
   font-size: 16px;
@@ -116,6 +126,8 @@ p {
 <br>
 
 #### 글자 굵기 조절
+
+Css 예시:
 ```
 h1 {
   font-weight: bold; 
@@ -124,6 +136,8 @@ h1 {
 <br>
 
 #### 글자 스타일
+
+Css 예시:
 ```
 em {
   font-style: italic;
@@ -135,6 +149,8 @@ em {
 색상 스타일링
 -------------
 #### 글자 색상 바꾸기
+
+Css 예시:
   ```
   h2 {
   color: blue;
@@ -143,6 +159,8 @@ em {
 <br>
 
 #### 배경 색상 바꾸기
+
+Css 예시:
 ```
 div {
   background-color: lightgray;
@@ -155,6 +173,8 @@ div {
  ------------
  
  #### 배경 이미지 넣기
+
+ Css 예시:
 ```
  body {
   background-image: url('https://example.com/image.jpg');
@@ -163,6 +183,8 @@ div {
 <br>
 
 #### 배경 크기 조정
+
+Css 예시:
 ```
 body {
   background-size: cover;
@@ -171,6 +193,8 @@ body {
 <br>
 
 #### 배경 반복 여부
+
+Css 예시:
 ```
    body {
   background-repeat: no-repeat;
@@ -200,7 +224,7 @@ Box Model이란? <br>
 <br>
 <br>
 
-예시 코드
+Css 예시 코드:
 ```
 .box {
   width: 200px;
@@ -290,7 +314,9 @@ Box Model이란? <br>
 <br>
 <br>
 
-*flex container 만들기*
+*flex container 만들기*<br>
+
+Css 예시:
 ```
 .container {
   display: flex;
@@ -331,9 +357,9 @@ Box Model이란? <br>
 <br>
 
 ### 1. em 단위
-em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 단위이다.<br><br>
+em은 **부모 요소의 글자 크기(font-size)** 기준으로 크기를 정하는 단위이다.<br><br>
 
-예시 코드:
+Css 예시 코드:
 ```
 .parent {
   font-size: 20px;
@@ -349,7 +375,7 @@ em은 **요소의 글자 크기(font-size)** 기준으로 크기를 정하는 �
 ### 2. rem 단위
 rem은 "HTML 루트 요소(root element)의 글자 크기" 기준이다.<br><br>
 
-예시 코드:
+Css 예시 코드:
 ```
 html {
   font-size: 16px;
@@ -377,7 +403,7 @@ html {
 기기 화면 크기(해상도)에 따라 CSS 스타일을 다르게 적용하는 방법이다.<br>
 반응형 웹을 만들 때 꼭 필요하다.<br>
 
-예시 코드:
+Css 예시 코드:
 ```
 .box {
   background-color: blue;
