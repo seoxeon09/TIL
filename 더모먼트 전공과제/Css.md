@@ -24,6 +24,9 @@ h1 {
 
  }
 ```
+결과<br>
+<img src=https://github.com/user-attachments/assets/59f011cf-4c5d-4a09-bdd3-83b42e0bd161 width="300" height="80"/>
+
 <br>
 <br>
 <br>
@@ -133,6 +136,9 @@ h1 {
   font-weight: bold; 
 }
 ```
+결과<br>
+![스크린샷 2025-05-11 143914](https://github.com/user-attachments/assets/6ff931d9-ce7c-4efe-abed-183af82bdcc9)
+
 <br>
 
 #### 글자 스타일
@@ -156,6 +162,9 @@ Css 예시:
   color: blue;
 }
  ```
+결과<br>
+<img src= "https://github.com/user-attachments/assets/0a99bef4-ae2a-43e3-af44-73a23baea5e2" width="300" height="60"/>
+
 <br>
 
 #### 배경 색상 바꾸기
@@ -180,6 +189,9 @@ div {
   background-image: url('https://example.com/image.jpg');
 }
 ```
+결과<br>
+![스크린샷 2025-05-11 143546](https://github.com/user-attachments/assets/4b2824b0-8eb7-4b8c-81b9-cfd3c73dc2fd)
+
 <br>
 
 #### 배경 크기 조정
@@ -197,9 +209,12 @@ body {
 Css 예시:
 ```
    body {
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 ```
+결과<br>
+![스크린샷 2025-05-11 143716](https://github.com/user-attachments/assets/ad76e275-16bb-4b64-b609-8029dbaf7442)
+
 <br>
 <br>
 <br>
