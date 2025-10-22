@@ -26,7 +26,6 @@ const schema = z.object({
   name: z.string().min(2, '이름은 최소 2글자 이상 입력해주세요!'),
 });
 ```
-
 <br>
 
 Date: 2025-09-29
